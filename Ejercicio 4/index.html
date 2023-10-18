@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shirley Juliet Gil Sánchez">
+    <title>Ejercicio 4: Condicionales</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir 'Ganaste un premio', 
+             en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”.-->
+        <h2>Número de cliente:</h2>
+        <form>
+            <input type="text" id="answer" name="respuesta" maxlength="10" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" onclick="validarInput()" required>  
+            <input type="submit" id="enviar" value="Enviar" onclick="confirmar()">
+        </form>
+    </div>
+</body>
+</html>

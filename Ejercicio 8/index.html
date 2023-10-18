@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shirley Juliet Gil Sánchez">
+    <title>Ejercicio 8: Condicionales</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Solicitar al usuario una calificación (entre 1 y 10). Luego se debe comprobar que el número efectivamente esté en ese rango, si no lo está imprima un mensaje de error. 
+             Si lo está, imprima “reprobado” si la calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, y por último, “excelente” si es 10.-->
+        <h2>Ingrese su calificación:</h2>
+        <form>
+            <input type="text" id="answer" name="respuesta" maxlength="3" onkeypress="return Numeros(event);" required>  
+            <input type="submit" id="enviar" value="Enviar" onclick="confirmar()">
+        </form>
+    </div>
+</body>
+</html>

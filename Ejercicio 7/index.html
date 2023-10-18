@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shirley Juliet Gil Sánchez">
+    <title>Ejercicio 7: Condicionales</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo.
+             Si el día ingresado no es ninguno de esos, imprimir otro mensaje..-->
+        <h2>Día de la semana:</h2>
+        <form>
+            <input type="text" id="answer" name="respuesta" maxlength="9" onkeypress="return Letras(event);" onclick="validarInput()" required>  
+            <input type="submit" id="enviar" value="Enviar" onclick="confirmar()">
+        </form>
+    </div>
+</body>
+</html>

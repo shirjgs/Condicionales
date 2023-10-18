@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shirley Juliet Gil Sánchez">
+    <title>Ejercicio 6: Condicionales</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--5. Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. 
+            Considerar el caso en que 2 números sean iguales..-->
+        <form>
+            <h2>Ingrese el primer número:</h2>
+            <input type="text" id="uno" name="num1" minlength="1" maxlength="8" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required>
+            <h2>Ingrese el segundo número:</h2>
+            <input type="text" id="dos" name="num2" minlength="1" maxlength="8" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required>
+            <h2>Ingrese el tercer número:</h2>
+            <input type="text" id="tres" name="num3" minlength="1" maxlength="8" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required>
+            <input type="submit" value="Enviar" onclick="confirmar()"> 
+        </form> 
+    </div>
+</body>
+</html>
